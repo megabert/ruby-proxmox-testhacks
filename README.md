@@ -1,6 +1,6 @@
 # ruby-proxmox-testhacks dummy
 
-The following Additions had been made since version 0.0.5 to rubygem "proxmox"
+The following Additions had been made since version 0.0.5 to rubygem "proxmox". https://github.com/nledez/proxmox
 
 ## New Class: Proxmox.Node
 ### Methods: 
