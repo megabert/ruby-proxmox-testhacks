@@ -55,7 +55,9 @@ def mk_proxmox_vm(server,name,ram_size_mb,disk_size_mb,cores)
                 "kvm"           => "1",
                 "net0"          => "e1000,bridge=vmbr0",
                 "net1"          => "e1000,bridge=vmbr1",
-                "ostype"        => "l26", "name"                => name, "vmid"         => id
+                "ostype"        => "l26",    # linux 2.6/3.x/4.x kernel
+                "name"          => name, 
+                "vmid"          => id
                 }
 
         node.create_qemu(data)
