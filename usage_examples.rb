@@ -9,13 +9,13 @@ require 'proxmox'
 require 'securerandom'
 
 proxmox_api_server = "www.my-proxmox.com"
-proxmox_api_url    = "http://#{proxmox-api-server}:8006/api2/json/"
-proxmox_user       = "proxmox-admin-user"
-proxmox_password   = "proxmox-pass"
+proxmox_api_url    = "https://#{proxmox_api_server}:8006/api2/json/"
+proxmox_user       = "some-proxmox-admin-user"
+proxmox_password   = "your-secure-proxmox-pass"
 proxmox_realm      = "pve"   # use pve or pam
 proxmox_connection = Proxmox::Proxmox.new(proxmox_api_url, proxmox_api_server, proxmox_user, proxmox_password, proxmox_realm, { :verify_ssl => false })
 
-$proxmox_node      = proxmox_api_server   # by default the api server is the only node too
+$proxmox_node      = proxmox_api_server   # by default the api server is the only node too, be sure that fits your scenario
 
 
 def mk_proxmox_vm(server,name,ram_size_mb,disk_size_mb,cores)
