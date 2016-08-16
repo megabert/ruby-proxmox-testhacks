@@ -6,7 +6,7 @@ The following Additions had been made since version 0.0.5 to rubygem "proxmox". 
 ### Methods: 
    * networks ( returns array of network objects from the node )
    * qemus ( returns array of existing qemu vms on the node )
-   * storage ( returns array of existing storages on the node )
+   * storages ( returns array of existing storages on the node )
    * create_qemu ( creates a qemu_vm on the node )
    * qemu_by_id ( returns Proxmox.NodeQemu Object if id is found)
    * storage_by_free_space( returns Proxmox.NodeStorage Object if a storage with content images and enough free space exists)
@@ -34,4 +34,4 @@ The following Additions had been made since version 0.0.5 to rubygem "proxmox". 
 ## Extended Class: Proxmox
 ### New Methods:
   * STATIC: next_free_node_id( returns the next free(#max qemu id + 1) qemu id of all given nodes) 
-  * nodes ( returns array of ProxmoxNode Objects for the current api server
+  * nodes ( returns array of ProxmoxNode Objects for the current api server )
