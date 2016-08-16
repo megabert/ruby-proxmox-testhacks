@@ -2,8 +2,8 @@
 
 The following Additions had been made since version 0.0.5 to rubygem "proxmox"
 
-== New Class: Proxmox.Node
-=== Methods: 
+## New Class: Proxmox.Node
+### Methods: 
     - networks ( returns array of network objects from the node )
     - qemus ( returns array of existing qemu vms on the node )
     - storage ( returns array of existing storages on the node )
@@ -14,24 +14,24 @@ The following Additions had been made since version 0.0.5 to rubygem "proxmox"
     - name ( returns node name )
     - free_ram_mb ( returns count free_ram in MB of the node )
     
-== New Class: Proxmox.NodeStorage
-=== Methods: 
+## New Class: Proxmox.NodeStorage
+### Methods: 
     - free ( returns free space on the storage )
     - storage ( returns the storage device name )
     - type ( returns type of the storage )
     - content ( returns type of content fo the storage )
     - create_disk ( creates a new file/image/disk on the storage )
 
-== New Class: Proxmox.NodeQemu
-=== Methods: 
+## New Class: Proxmox.NodeQemu
+### Methods: 
     - name ( Returns the Qemu-VM Name )
     - id ( Returns the Qemu-VM ID )
     - destroy ( fully destroys the vm and the linked vm-storage-files )
     
-== New Class: Proxmox.NodeNetwork
+## New Class: Proxmox.NodeNetwork
     Dummy Class at the moment
     
-== Extended Class: Proxmox
-=== New Methods:
-   - STATIC: next_free_node_id( returns the next free(=max qemu id + 1) qemu id of all given nodes) 
+## Extended Class: Proxmox
+### New Methods:
+   - STATIC: next_free_node_id( returns the next free(#max qemu id + 1) qemu id of all given nodes) 
    - nodes ( returns array of ProxmoxNode Objects for the current api server)
